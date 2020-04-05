@@ -4,12 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Test\""
+    "commit": "git-cz",
+    "build": "echo \"building...\"",
+    "prepare": "npm run build",
+    "predeploy": "npm install",
+    "deploy": "gh-pages -d ./static",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tcampb-dev/travis-ci-test.git"
+    "url": "https://github.com/tcampb-dev/travis-ci-test.git"
   },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "gh-pages": "^1.2.0",
+    "semantic-release": "^17.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
