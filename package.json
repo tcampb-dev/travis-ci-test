@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ci": "npm install",
     "commit": "git-cz",
     "build": "echo \"building...\"",
     "prepare": "npm run build",
