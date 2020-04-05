@@ -7,5 +7,4 @@ deploy:
     script:
       - npm run semantic-release
     on:
-      tags: true
       branch: master
