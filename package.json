@@ -10,7 +10,7 @@
     "prepare": "npm run build",
     "predeploy": "npm install",
     "deploy": "gh-pages -d ./static",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --debug"
   },
   "repository": {
     "type": "git",
